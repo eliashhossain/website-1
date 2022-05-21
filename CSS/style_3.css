@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans", sans-serif;
+}
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    url(img/4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+ul {
+  float: right;
+  list-style: none;
+  margin: 25px;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  color: black;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+nav .logo {
+  width: 25%;
+  text-align: center;
+  /* background: coral; */
+  font-size: 25px;
+  color: rgb(236, 121, 14);
+}
+/* nav .menu {
+width: 50%;
+background: yellow;
+display: flex; justify-content: space-around;
+} */
+nav .menu a {
+  width: 25%;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+ul li a:hover {
+  color: black;
+  background-color: rgb(19, 201, 201);
+  transition: all 0.6s ease;
+}
+main {
+  width: 100%;
+  height: 90vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+}
+section {
+  /* background-color: burlywood; */
+}
+section h3 {
+  font-family: "Bebas Neue", cursive;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-shadow: 3px 2px 3px black;
+  /* background-color: cadetblue; */
+}
+section h1 {
+  margin: 10px 0 10px 0;
+  font-size: 50px;
+  font-weight: 700;
+  font-weight: bold;
+  text-shadow: 3px 2px 3px black;
+  text-transform: uppercase;
+  /* background-color: chocolate; */
+}
+section p {
+  font-size: 20px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 3px black;
+  /* background-color: crimson; */
+}
+section a {
+  padding: 12px 30px;
+  border-radius: 5px;
+  outline: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.6s ease;
+}
+section .btn1 {
+  background-color: rgb(33, 160, 160);
+  color: white;
+}
+.btn1:hover {
+  background-color: white;
+  color: black;
+}
+section .btn2 {
+  background-color: white;
+  color: black;
+}
+.btn2:hover {
+  background-color: rgb(33, 160, 160);
+  color: white;
+}
+.content_change:after {
+  content: "";
+  animation: changetext 15s infinite linear;
+  color: rgb(33, 160, 160);
+}
+@keyframes changetext {
+  0% {
+    content: " পুরান ঢাকা।.";
+  }
+  20% {
+    content: "সোনারগাঁও";
+  }
+  40% {
+    content: "সিলেট ";
+  }
+  60% {
+    content: "কক্সবাজার ";
+  }
+  70% {
+    content: "সেন্ট মার্টিন দ্বীপ। ";
+  }
+  80% {
+    content: "শ্রীমঙ্গল ";
+  }
+  100% {
+    content: "সুন্দরবন ";
+  }
+}
